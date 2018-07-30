@@ -27,6 +27,7 @@ for line in open(filename):
     if m:
         if first_line == False:
             out.write(seq + '\n')
+            seq = ''
         out.write(line)
         first_line = False
     else:
